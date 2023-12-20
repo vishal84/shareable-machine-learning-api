@@ -14,3 +14,6 @@ To provide all learners with access to pre-trained models and not to expose cred
 ![architecture](img/architecture.png)
 <p align="center">Figure 1-2</p>
 
+## Hosted Model
+The Hosted Model can be hosted on any supported compute platform including Cloud Providers and on-premise environments. The Hosted Model needs to provide access to the Model Sharing API which can be done via a Public IP Address or Private IP Address. The learner/user that requires access to the hosted model has no access or visibility to the hosted model, the learner/user only has access to the Model Sharing API. The Hosted Model can run any machine learning framework of choice as TensorFlow, Keras, PyTorch, Scikit-learn, and others.
+
