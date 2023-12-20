@@ -1,0 +1,42 @@
+  swagger: '2.0'
+  info:
+    title: SML API Cloud Endpoint
+    description: Cloud Endpoints configuration for the SML API
+    version: 1.0.0
+  host: sml-api-kjyo252taq-uc.a.run.app
+  schemes:
+    - https
+  produces:
+    - application/json
+  x-google-backend:
+    address: https://sml-api-kjyo252taq-uc.a.run.app
+    protocol: h2
+  paths:
+    /:
+      get:
+        summary: Greet a user
+        operationId: getRootPath
+        responses:
+          '200':
+            description: A successful response
+            schema:
+              type: string
+    /automl_tables/csv:
+      post:
+        summary: AutoML Tables Batch CSV Prediction
+        operationId: putAutomlTablesCsv
+        responses:
+          '200':
+            description: A successful response
+            schema:
+              type: string
+    /automl_tables/csv/status:
+      post:
+        summary: Check Status of AutoML Tables Batch CSV Prediction
+        operationId: putAutomlTablesCsvStatus
+        responses:
+          '200':
+            description: A successful response
+            schema:
+              type: string
+

@@ -1,0 +1,7 @@
+Flask==2.0.2
+gunicorn==20.1.0
+google-cloud-aiplatform
+google-auth
+kfp==1.8.10  
+kfp-pipeline-spec==0.1.13  
+kfp-server-api==1.7.1
